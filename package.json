@@ -1,0 +1,22 @@
+{
+  "name": "vacuum-map",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "run": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "node-fetch": "^3.1.0",
+    "pako": "^2.0.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^3.0.3"
+  }
+}
