@@ -4,10 +4,10 @@ import pako from 'pako';
 import fetch from 'node-fetch';
 
 // Get the token from camera.map_data entity
-const token = "";
+const token = process.env.HA_TOKEN;
 
 // Your home assistant fqdn or ip address with the port if different from default of scheme
-const haEndpoint  = "";
+const haEndpoint  = process.env.HA_ENDPOINT || "http://homeassistant.local:8123";
 const imgURL = `${haEndpoint}/api/camera_proxy/camera.map_data?token=${token}`;
 
 /**
